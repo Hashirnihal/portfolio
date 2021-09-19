@@ -1,60 +1,287 @@
 <!DOCTYPE html> 
 <html>
     <head>  
-      
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Website</title>
         <style type="text/css">
+            body{
+                background-color: white;
+                margin:0;
+            }
             #main-header{
                 text-align:center;
-                background-color:rgb(48, 16, 16);
-                color:white;
-                padding:10px;
+                background-color:rgb(203, 212, 247);
+                color:black;
+                padding:10px;   
+            }
+            #showcase{
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                color: black;
+                text-align: right ;
+                box-sizing: border-box;
+            }
+            #showcase h2{
+                float:left;
+                position: absolute;
+                text-align: center ;
+                line-height: 1.6em;
+                font-size: 30px;
+                box-sizing: border-box;
+                padding-left: 350px;
+                padding-top: 100px;
+                font-family:serif;
+            }
+            #navbar{
+                padding-left: 60px;
+            }
+            .box-1 u1{
+                list-style: none;
+                 padding-top:10px ;
+                
+            }
+            .box-1 li{
+                padding-bottom:10px ;
+
+                
+            }
+            #navbar a{
+                color:rgb(34, 42, 75);
+                text-decoration: none;
+                font-size: 18px;
+                font-family:serif;
+            }
+            .box-1{
+                padding-top:10px ;
+                width: 140px;
+                height: 710px;
+                background-color:rgb(203, 212, 247) ;
+                box-sizing: border-box;
+                position:fixed;
+            }
+            .container{
+                width:80%;
+                margin:auto;
+                overflow:hidden;
             }
             #main-footer{
                 text-align:center;
-                text-size:18px;
-                padding: 5px;
-                background-color: rgb(46, 34, 22);
-                color:white;
+                font-size:18px;
+                padding: 5px; 
+                background-color: rgb(203, 212, 247);
+                color:black;
+            
             }
+            #main{
+                color: black;
+                text-align: left;
+                padding-left: 250px;
+                padding-top: 100px;
+                padding-bottom:160px;
+                background-color: rgb(227, 229, 236);
+            }
+            #main p{
+                font-size: 20px;
+            }
+            #main li{
+                font-size: 20px;
+            }
+            #main h1{
+                font-size: 40px;
+            }
+            #main h4{
+                font-size: 25px;
+            }
+            #qualification{
+                color: black;
+                text-align: left;
+                padding-left: 250px;
+                padding-top: 130px;
+                padding-bottom: 170px;
+               
+                
+            }
+            #qualification h1{
+                font-size: 30px;
+                
+            }
+            table{
+                font-size: 20px;
+                font-family: arial, sans-serif;
+                border-collapse:collapse;
+                
+                width: 100%;
+                 }
+                td,th{
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+                
+                 }
+                tr:nth-child(even){
+                
+                 background-color: #dff5fd;       
+                }
+                th{
+                    background-color: #a5c6d3;
+                }
+
+            form{
+                padding-left:250px;
+                padding-top: 50px;
+            }
+            .contact h1{
+                padding-left: 250px;
+                font-size: 30px;
+                padding-top: 25px;
+            }
+            input[type=text] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type=textarea] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            input[type=reset] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type=reset]:hover {
+                    background-color: #45a049;
+            }
+            div {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+                }
+            
         </style>
     </head>
     <body>
+        <nav id="navbar">
+            <div class="box-1">
+                <u1>
+                    <li><a href="#main-header">Home</a></li>
+                    <li><a href="#main">About</a></li>
+                    <li><a href="#qualification">Qualifications</a></li>
+                    <li><a href="#form">Contact</a></li>
+                </u1>
+            </div>
+        </nav>
         <header id="main-header">
-            <h1>My Details</h1>
+            <h1>My Website</h1>
         </header>
-        <section>
-            <article>
+        
+        <section id="showcase">
+            <div class="p-box">
+                <h2>I <br> am <br> Muhammed Hashir Nihal</h2>
+            </div>  
+            <div class="container">
+                <img src="F:\photos\family\my pic.jpeg" alt="My Pic" width="400px" height="500px">
                 
+            </div> 
+           
+        </section>
+        <section id="main">
+            <div class="para">
+                <h1>About Me</h1>
                 <p>
                     I am Muhammed Hashir Nihal from Thamarassery,Calicut
-                    and i am studing B Tech at MEA Engineering College Perinthalmanna.
+                    and i am studing B Tech at MEA Engineering College Perinthalmanna.<br>Age:20
                 </p>
-                
-                <P>Age=20 <br>Hiegt=172
-                </P>
-                <h5>My Hobbies</h5>
-                <ol>
-                    <li>Playing</li>
-                    <li>Studing Web Development</li>
-                    <li>Drawing</li>
-                </ol>
-            </article>
-        </section>
-        <aside>
-            <h3>For More</h3>
-            <u1>
-                <li><a href="F:\photos\family\my pic.jpeg">My Pic </a></li>
-                    <img src="F:\photos\family\my pic.jpeg" alt="my pic"width="0"height="0">
-                    
-                <li><a href="My Qualification.html">My Qualifications</a></li>
-            </u1>
+                <h4>My Hobbies</h4>
+            <ul>
+                <li>Playing</li>
+                <li>Studing Web Development</li>
+                <li>Drawing</li>
+            </ul>
+            </div>
 
-        </aside>
-        <div style="margin-top: 125px;"></div>
+        </section>
+        <section id="qualification" >
+            <div class="table" >
+                <h1>My Qualifications</h1>
+                <table>
+                    
+                    <thead>
+                        <tr>
+                            <th>SINO</th>
+                            
+                            <th>Qualification</th>
+                            <th>From</th>
+                            <th>Pass Out</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td>1</td>
+                            <td>SSLC</td>
+                            <td>ISHA ATH Public School ,Pooonor</td>
+                            <td>2017</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Plus Two</td>
+                            <td>GVHSS Thamarassery</td>
+                            <td>2019</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>B Tech</td>
+                            <td>MEA Engineering College</td>
+                            <td>On Going</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+        
+        <section id="form">
+            <div class="contact">
+                <h1>Contact With Me</h1>
+                <form>
+                    <label > First Name:</label><br>
+                    <input type="text" placeholder="Enter your first name">
+                    <label >Second Name:</label><br>
+                    <input type="text" placeholder="Enter your second name">
+                    <label >Email:</label><br>
+                    <input type="text" placeholder="Enter your Email">
+                    <label >Message:</label><br>
+                    <input type="textarea" placeholder="Enter your comments">
+                    <label>Contact</label>
+                    <input type="number" placeholder="eg:+91..">
+                    
+                    <input type="reset" value="Submit">
+                </form>
+            </div>
+        </section>
+        
         <footer id="main-footer">
-            <p>This is my Details 
+            <p>Thank You 
             </p>
         </footer>
+       
     </body>
 </html>
